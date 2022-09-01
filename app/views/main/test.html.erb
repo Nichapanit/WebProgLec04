@@ -1,0 +1,14 @@
+<h1>Main#test</h1>
+<p>Find me in app/views/main/test.html.erb</p>
+
+<%= form_with url:"/main/post", method: 'post' , data: {turbo:false} do |form| %>
+<%= form.label :query ,"Subject" %>
+<%= form.label :query ,"Score" %><br>
+<%= form.text_field :subject1 %>
+<%= form.number_field :score1 %><br>
+<%= form.text_field :subject2 %>
+<%= form.number_field :score2 %><br>
+<%= form.text_field :subject3 %>
+<%= form.number_field :score3 %><br>
+<%= form.submit "submit" %><br>
+<% end %>
